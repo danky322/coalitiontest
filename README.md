@@ -7,11 +7,15 @@ I'll list the features I have implemented for this test here.
 1. Responsive design
 2. Contact form with basic validation (press the submit button to check it out!)
 3. Programmatic menu with sub menus
-4. CSS transitions and hover effects
-5. Cute cat flavicon!
+4. Hamburger menu for smaller resolutions
+5. CSS transitions and hover effects
+6. Cute cat flavicon!
 
 ### `TO SEE MY CODE`
 The build folder is minified code, all my code is in the src folder!
+
+### `LIVE VERISON OF THE SITE`
+https://keen-medovik-8351e7.netlify.app/
 
 ### `GITHUB Repo for the actual code`
 https://github.com/danky322/coalitiontest
