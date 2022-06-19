@@ -1,0 +1,79 @@
+.header {
+	font-family: 'Bebas Neue', 'Courier New', Courier, monospace;
+	font-size: 1.333rem;
+	width: 100%;
+	height: 2.1rem;
+	background-color: #ff6200;
+	display: flex;
+	justify-self: flex-start;
+	align-items: center;
+	position: sticky;
+	top: 0;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav * {
+	cursor: pointer;
+}
+
+.callus {
+	color: #be3600;
+	margin-right: 10px;
+}
+
+.number,
+.signup {
+	color: #ffffff;
+}
+
+.login {
+	color: #be3600;
+	margin-right: 12px;
+}
+
+/* hover effects */
+
+@keyframes headhover {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes headhover {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		color: #bbaca4 !important;
+	}
+}
+
+.contactheader:hover * {
+	-webkit-animation: headhover 0.2s forwards; /* for less modern browsers */
+	animation: headhover 0.2s forwards;
+}
+
+.membersNav span:hover {
+	-webkit-animation: headhover 0.2s forwards; /* for less modern browsers */
+	animation: headhover 0.2s forwards;
+}
+
+@media screen and (max-width: 380px) {
+	.callus {
+		display: none;
+	}
+}

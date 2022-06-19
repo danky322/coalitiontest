@@ -1,0 +1,82 @@
+.contact {
+	font-family: 'Ubuntu', 'Courier New', Courier, monospace;
+	font-size: 1.1667rem;
+}
+
+.sitetree {
+	color: #c1c1c1;
+	margin-top: 47px;
+	cursor: pointer;
+}
+
+.contacttext {
+	color: #535353;
+	font-weight: 700;
+}
+
+.contactHeader {
+	color: #ff6200;
+	font-family: 'Open Sans', 'Courier New', Courier, monospace;
+	font-weight: 700;
+	font-size: 1.4rem;
+}
+
+.contactHeader {
+	margin-top: 45px;
+}
+
+.contactHeader h1 {
+	margin-bottom: 1rem;
+}
+
+.contactHeader div {
+	font-size: 0.9rem;
+	font-weight: 300;
+	color: #9a9a9a;
+	letter-spacing: -1px;
+	line-height: 1.3rem;
+}
+
+.contactBody {
+	margin-top: 60px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.contactForm {
+	font-family: 'Open Sans', 'Courier New', Courier, monospace;
+	width: 470px;
+	height: 325px;
+}
+
+.contactSocial {
+	font-family: 'Open Sans', 'Courier New', Courier, monospace;
+	width: 409px;
+	height: 325px;
+}
+
+@media screen and (max-width: 960px) {
+	.contactBody {
+		margin-top: 60px;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+	}
+
+	.contactSocial {
+		order: 1;
+		margin-bottom: 3em;
+		width: 100%;
+	}
+
+	.contactForm {
+		order: 2;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 630px) {
+	.contactHeader {
+		text-align: center;
+	}
+}

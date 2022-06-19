@@ -1,0 +1,77 @@
+.socialTitle {
+	display: flex;
+	flex-flow: column;
+	font-size: 1.9rem;
+	color: #ff6200;
+	letter-spacing: -1px;
+}
+
+.blackBar {
+	content: '.';
+
+	font-size: 0;
+
+	display: block;
+
+	height: 6px;
+
+	width: 100%;
+
+	background: #595959;
+
+	margin: 13px 0;
+}
+
+.addressBlock {
+	font-family: 'Myriad Pro Regular', 'Courier New', Courier, monospace;
+	font-size: 1.1rem;
+}
+
+.addressTitle {
+	font-size: 1.3rem;
+	margin-bottom: 12px;
+}
+
+.address {
+	margin-bottom: 20px;
+}
+
+.socialIcons {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 62px;
+	width: 150px;
+}
+
+.socialIcons * {
+	height: 32px;
+	width: 32px;
+	cursor: pointer;
+}
+
+.socialIcons *:hover * {
+	stroke: #363636;
+	fill: #363636;
+	color: #363636;
+}
+
+@media screen and (max-width: 960px) {
+	.addressBlock {
+		margin-left: 0.5em;
+	}
+}
+
+@media screen and (max-width: 630px) {
+	.addressBlock {
+		margin-left: 0em;
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	.socialTitle {
+		text-align: center;
+	}
+}

@@ -1,0 +1,159 @@
+.socialTitle {
+	font-size: 1.9rem;
+	color: #ff6200;
+	letter-spacing: -1px;
+}
+
+.blackBar {
+	content: '.';
+
+	font-size: 0;
+
+	display: block;
+
+	height: 6px;
+
+	width: 100%;
+
+	background: #595959;
+
+	margin: 13px 0 20px 0;
+}
+
+.errors {
+	margin: 0;
+	font-size: 0.7rem;
+	padding-bottom: 10px;
+	box-sizing: border-box;
+}
+
+.errors span {
+	width: 50%;
+}
+
+.double {
+	display: flex;
+	justify-content: space-between;
+}
+
+form input,
+form textarea {
+	font-family: 'Ubuntu', 'Courier New', Courier, monospace;
+	font-size: 1.1rem;
+	font-weight: 300;
+	height: 32px;
+	background-color: #f6f6f6;
+	outline: none;
+	border: 1px solid #ededed;
+	color: #878787;
+	padding: 0.5em;
+	box-sizing: border-box;
+}
+
+.name,
+.phoneEmail,
+.message {
+	width: 470px;
+}
+
+.phoneEmail {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.phoneEmail input {
+	width: 230px;
+}
+
+.name input {
+	width: 100%;
+}
+
+.message textarea {
+	width: 100%;
+	height: 108px;
+	resize: none;
+}
+
+.buttonBox {
+	margin-top: 0.3em;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.submit {
+	cursor: pointer;
+	font-family: 'Open Sans', 'Courier New', Courier, monospace;
+	font-weight: 700;
+	color: #ffffff;
+	background-color: #ff6200;
+	width: 98px;
+	height: 36px;
+	border: none;
+}
+
+.submit:active {
+	background-color: #873604;
+	color: #868686;
+}
+
+.loading {
+	background-color: #873604;
+	color: #868686;
+}
+
+/* Spinner Loader */
+
+.lds-ring {
+	display: none;
+	position: relative;
+	width: 50px;
+	height: 50px;
+}
+.lds-ring div {
+	box-sizing: border-box;
+	display: block;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+	border: 5px solid #cfcfcf;
+	border-radius: 50%;
+	animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+	border-color: #cfcfcf transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+	animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+	animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+	animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.displaySpinner {
+	display: inline-block !important;
+}
+
+@media screen and (max-width: 960px) {
+	.name,
+	.phoneEmail,
+	.message {
+		width: 100%;
+	}
+
+	.phoneEmail input {
+		width: 45%;
+	}
+}
