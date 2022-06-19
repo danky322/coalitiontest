@@ -10,16 +10,14 @@ I'll list the features I have implemented for this test here.
 4. CSS transitions and hover effects
 5. Cute cat flavicon!
 
-TO SEE MY CODE
+### `TO SEE MY CODE`
 The build folder is minified code, all my code is in the src folder!
 
-GITHUB Repo for the actual code
+### `GITHUB Repo for the actual code`
 https://github.com/danky322/coalitiontest
 
-GITHUB Repo for my other projects
+### `GITHUB Repo for my other projects`
 https://github.com/danjhkim/
-
-
 
 TO RUN DEV ENIVORMENT
 ### `npm install`

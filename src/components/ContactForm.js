@@ -12,7 +12,7 @@ const ContactForm = () => {
 	const validate = () => {
 		let errors = {};
 		const phoneCheck = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
-		const emailCheck = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+		const emailCheck = /^\w+([\\.-]?\w+)*@\w+([\\.-]?\w+)*(\.\w{2,3})+$/;
 
 		if (!name) {
 			errors.name = 'You must enter a name';
