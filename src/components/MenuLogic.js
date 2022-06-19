@@ -8,6 +8,7 @@ const MenuLogic = ({ animate }) => {
 		const pos = document.querySelectorAll('.pos');
 		const menus = document.querySelectorAll('.menu');
 		const subnav = document.querySelector('.subnav');
+		const subHeader = document.querySelector('.subheader');
 		const subMenuParent = document.querySelectorAll('.subMenuParent');
 		const subMenu = document.querySelectorAll('.subMenu');
 
@@ -27,6 +28,13 @@ const MenuLogic = ({ animate }) => {
 		for (let i = 0; i < menus.length; i++) {
 			//on mouse leave of menu of subnav close menus
 			menus[i].addEventListener('mouseleave', () => {
+				menus[i].classList.remove('show');
+				menus[i].classList.add('hide');
+				subMenu[i].classList.remove('show');
+				subMenu[i].classList.add('hide');
+			});
+
+			subHeader.addEventListener('mouseleave', () => {
 				menus[i].classList.remove('show');
 				menus[i].classList.add('hide');
 				subMenu[i].classList.remove('show');
@@ -74,6 +82,13 @@ const MenuLogic = ({ animate }) => {
 			}
 
 			for (let i = 0; i < menus.length; i++) {
+				subHeader.removeEventListener('mouseleave', () => {
+					menus[i].classList.remove('show');
+					menus[i].classList.add('hide');
+					subMenu[i].classList.remove('show');
+					subMenu[i].classList.add('hide');
+				});
+
 				menus[i].removeEventListener('mouseleave', () => {
 					menus[i].classList.remove('show');
 					menus[i].classList.add('hide');
