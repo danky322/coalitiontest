@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable react/jsx-no-comment-textnodes */
 import { useEffect } from 'react';
 
 const MenuLogic = ({ animate }) => {
